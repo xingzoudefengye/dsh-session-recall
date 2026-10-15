@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-recall",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bounded, model-free session chronicle for DeepSeek Harness, plus a switch that turns on the harness's own workspace-authorized session history tools.",
   "type": "module",
   "main": "lib/chronicle.js",
