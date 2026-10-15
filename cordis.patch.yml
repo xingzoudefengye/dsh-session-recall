@@ -1,0 +1,20 @@
+# dsh-session-recall bundle patch.
+#
+# Mounts the bounded session chronicle: one service other plugins can read, and
+# one model-facing tool. Both are pure folds over the session's own durable
+# event log, so this bundle adds no storage, no background work, no index, and
+# no model calls.
+#
+# The workspace-authorized search/read tools (`session_search`,
+# `session_event_search`, `session_trace`, `session_event_trace`,
+# `session_event_read`) are deliberately NOT mounted here. They are upstream's
+# opt-in feature and cost fixed guidance plus five tool schemas on every model
+# request. Run `scripts/enable-read-tools.sh <profile>` to turn them on at your
+# harness's own version.
+
+- insert:
+    - id: session-chronicle
+      name: 'dsh-session-recall/service'
+
+    - id: tool-session-chronicle
+      name: 'dsh-session-recall/tool'
