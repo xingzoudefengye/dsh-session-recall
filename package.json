@@ -10,14 +10,16 @@
     "./service": "./lib/service.js",
     "./tool": "./lib/tool.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*": "./locale/*"
   },
   "files": [
     "lib",
     "cordis.patch.yml",
     "scripts",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "locale"
   ],
   "scripts": {
     "test": "node --test",

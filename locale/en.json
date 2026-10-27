@@ -1,0 +1,5 @@
+{
+  "meta": {
+    "description": "Bounded, model-free session chronicle for DeepSeek Harness, plus a switch that turns on the harness's own workspace-authorized session history tools."
+  }
+}
